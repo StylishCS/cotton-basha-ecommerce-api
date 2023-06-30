@@ -13,7 +13,7 @@ var productsRouter = require('./routes/products');
 
 var app = express();
 
-mongoose.connect('mongodb+srv://joeshirf:joo2330768@cotton-basha-ecommerce.ioevnwq.mongodb.net/')
+mongoose.connect('mongodb+srv://"contact me for username and password"@cotton-basha-ecommerce.ioevnwq.mongodb.net/')
 .then(()=>console.log('connected to mongoose db...'))
 .catch(err=>console.error(err.message));
 
