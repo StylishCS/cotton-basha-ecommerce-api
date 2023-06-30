@@ -1,0 +1,59 @@
+/* 
+
+PRODUCT ->
+         { 
+            id: alphanumerical
+            imagesArray[]: string //links to images on server
+            name: string
+            price: float
+            description: string
+            colors[]:string //hexadecimal color codes
+            reviews[]: Review.id //alphanumerical
+            new?: boolean
+            featured?:boolean
+        }
+        REVIEW ->
+        {
+            id: alphanumerical
+            user: User.id //alphanumerical
+            rating: decimal
+            comment: string
+        }
+
+        USER -> 
+        {
+            id: alphanumerical
+            username: string
+            password: string
+            email: string
+            name: {
+                first: string
+                last: string
+            }
+            address[]: string
+            orders[]: Order.id //alphanumerical
+        }
+
+        OFFER -> 
+        {
+            id: alphanumerical
+            description: string
+            bundle[]: Product.id //alphanumerical
+            image: string
+            value?: decimal
+            price: decimal
+            discount?: decimal //percentage off
+        }
+
+        ORDER -> 
+        {
+            id: alphanumerical
+            customer: user.id //alphanumerical
+            products[]: product.id //alphanumerical
+            address: string
+            ETA: DATE/TIME
+            totalPrice: decimal
+            paymentMethod: string
+        }
+     
+     */
